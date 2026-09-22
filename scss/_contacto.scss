@@ -1,171 +1,279 @@
-@use "variables" as *;
-@use "mixins" as *;
-
+/* =================================================================
+   SISTEMA ANIDADO PARA COMPILACIÓN CORRECTA EN PRISMA LANDING
+   ================================================================= */
 .sitio-de-estudio {
-  .contacto-y-pie {
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
-    align-items: flex-start;
-    background-color: $color-azul;
-  }
+  /* =================================================================
+     ESTILOS: SECCIÓN TESTIMONIOS (LA VOZ DE NUESTROS CLIENTES)
+     ================================================================= */
+  .testimonios {
+    padding: 80px 20px;
+    background-color: #f9fbfd; /* Fondo claro sutil para separar */
+    text-align: center;
 
-  .invitacin {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 86px 80px;
-    width: 100%;
-  }
-
-  .mensaje {
-    display: flex;
-    flex-direction: column;
-    width: 760px;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .t-tulo-5 {
-    align-self: stretch;
-    @include titulo-serif(52px, $color-text-onDark, 0, 56.2px);
-  }
-
-  .descripci-n-3 {
-    width: 590px;
-    color: $color-text-onDark-muted;
-    line-height: 25.6px;
-    font-family: $font-sans;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .informacin {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 58px 80px;
-    width: 100%;
-    border-top: 1px solid $color-border-footer;
-  }
-
-  .identidad {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    align-items: flex-start;
-    gap: 18px;
-  }
-
-  .logo-prisma-footer {
-    width: 32px;
-    height: 32px;
-    border-radius: $radius-sm;
-    border: 1px solid rgba($color-plata, 0.4);
-    background-image: url("../img/image.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .nombre-3 {
-    font-family: $font-serif;
-    color: $color-text-onDark;
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  .lema {
-    align-self: stretch;
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark-muted;
-    font-size: 13px;
-    line-height: 19.5px;
-  }
-
-  .datos {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 70px;
-  }
-
-  .div-3 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .t-tulo-6 {
-    margin-top: -1px;
-    font-family: $font-sans;
-    font-weight: 700;
-    color: $color-bronce;
-    font-size: 11px;
-    letter-spacing: 0.15px;
-    white-space: nowrap;
-  }
-
-  .direcci-n {
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark;
-    font-size: 14px;
-    line-height: 22.4px;
-    white-space: nowrap;
-  }
-
-  .canales {
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark;
-    font-size: 14px;
-    line-height: 22.4px;
-  }
-
-  .enlace-social {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .linkedin {
+    // Fuerza a la sección a romper el contenedor rígido y usar todo el ancho de pantalla
+    width: 100vw;
     position: relative;
-    width: 18px;
-    height: 18px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+
+    .subttulo-seccion,
+    .subttulo-seccion-claro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .acento-rojo {
+      width: 16px;
+      height: 2px;
+      background-color: #c97d60; /* Color del acento de tu Figma */
+    }
+
+    .texto-acento {
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #1e293b;
+    }
+
+    .cita-cliente {
+      font-family: "Lora", Georgia, serif;
+      font-size: 28px;
+      line-height: 1.5;
+      color: #0f172a;
+      max-width: 850px;
+      margin: 0 auto 32px auto;
+    }
+
+    .autor-cita {
+      margin-bottom: 48px;
+    }
+
+    .nombre-autor {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+    }
+
+    .cargo-autor {
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    .menciones-reconocimientos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-family: "Inter", sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #94a3b8;
+    }
   }
 
-  .vector-5 {
-    position: absolute;
-    width: 94.45%;
-    height: 94.45%;
-    top: 5.55%;
-    left: 5.55%;
+  /* =================================================================
+     ESTILOS: SECCIÓN CONTACTO & FOOTER GENERAL (FONDO OSCURO)
+     ================================================================= */
+  .seccion-contacto-footer {
+    background-color: #11223f; /* Azul oscuro profundo de tu diseño */
+    color: #ffffff;
+    padding: 80px 40px 40px 40px;
+    box-sizing: border-box;
+
+    // Fuerza al bloque azul a estirarse de punta a punta de la pantalla
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .texto-acento-claro {
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #94a3b8;
+    }
+
+    .contacto-call-to-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contacto-izquierda {
+      max-width: 600px;
+    }
+
+    .subttulo-seccion-claro {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .titulo-contacto {
+      font-family: "Lora", Georgia, serif;
+      font-size: 42px;
+      font-weight: 400;
+      margin: 0 0 16px 0;
+      color: #ffffff;
+    }
+
+    .bajada-contacto {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      color: #cbd5e1;
+      margin: 0;
+    }
+
+    /* El botón marrón de Figma */
+    .boton-solicitar {
+      display: inline-block;
+      background-color: #9c6644; /* Tono marrón/terracota */
+      color: #ffffff;
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #7f5539;
+      }
+    }
+
+    .divisor-footer {
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+
+    /* Grilla del pie de página */
+    .footer-principal {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto 80px auto;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .columna-marca {
+      max-width: 320px;
+    }
+
+    .logo-prisma-footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+
+    .eslogan-footer {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #94a3b8;
+    }
+
+    .columnas-info {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .columna-info-bloque {
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #9c6644; /* Mismo tono terracota para los títulos */
+        margin: 0 0 16px 0;
+      }
+
+      p,
+      a {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #cbd5e1;
+        text-decoration: none;
+        margin: 0 0 8px 0;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+    }
+
+    /* Barra inferior de Legales */
+    .footer-legales {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      color: #64748b;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .links-legales {
+        display: flex;
+        gap: 24px;
+
+        a {
+          color: #64748b;
+          text-decoration: none;
+
+          &:hover {
+            color: #cbd5e1;
+          }
+        }
+      }
+    }
   }
 
-  .etiqueta-3 {
-    margin-top: -0.5px;
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark;
-    font-size: 14px;
-  }
-
-  .legales {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 22px 80px;
-    width: 100%;
-    background-color: $color-azul-noche;
-  }
-
-  .text-wrapper-2 {
-    margin-top: -1px;
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark-muted;
-    font-size: 11px;
-    white-space: nowrap;
+  /* Adaptación para pantallas de celulares */
+  @media (max-width: 768px) {
+    .seccion-contacto-footer {
+      .contacto-call-to-action,
+      .footer-principal {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .columnas-info {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+    .testimonios {
+      .cita-cliente {
+        font-size: 20px;
+      }
+    }
   }
 }

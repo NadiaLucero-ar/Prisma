@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .sitio-de-estudio {
   display: flex;
   flex-direction: column;
@@ -486,156 +487,253 @@ html {
   letter-spacing: 0.14px;
 }
 
-.sitio-de-estudio .contacto-y-pie {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  align-items: flex-start;
-  background-color: #16283F;
+/* =================================================================
+   SISTEMA ANIDADO PARA COMPILACIÓN CORRECTA EN PRISMA LANDING
+   ================================================================= */
+.sitio-de-estudio {
+  /* =================================================================
+     ESTILOS: SECCIÓN TESTIMONIOS (LA VOZ DE NUESTROS CLIENTES)
+     ================================================================= */
 }
-.sitio-de-estudio .invitacin {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 86px 80px;
-  width: 100%;
-}
-.sitio-de-estudio .mensaje {
-  display: flex;
-  flex-direction: column;
-  width: 760px;
-  align-items: flex-start;
-  gap: 20px;
-}
-.sitio-de-estudio .t-tulo-5 {
-  align-self: stretch;
-  font-family: "Lora", Helvetica, serif;
-  font-weight: 400;
-  font-size: 52px;
-  color: #F3F5F7;
-  letter-spacing: 0;
-  line-height: 56.2px;
-}
-.sitio-de-estudio .descripci-n-3 {
-  width: 590px;
-  color: #9AA7B4;
-  line-height: 25.6px;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-.sitio-de-estudio .informacin {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 58px 80px;
-  width: 100%;
-  border-top: 1px solid #A9B4BE;
-}
-.sitio-de-estudio .identidad {
-  display: flex;
-  flex-direction: column;
-  width: 340px;
-  align-items: flex-start;
-  gap: 18px;
-}
-.sitio-de-estudio .logo-prisma-footer {
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
-  border: 1px solid rgba(169, 180, 190, 0.4);
-  background-image: url("../img/image.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.sitio-de-estudio .nombre-3 {
-  font-family: "Lora", Helvetica, serif;
-  color: #F3F5F7;
-  font-size: 18px;
-  font-weight: 700;
-}
-.sitio-de-estudio .lema {
-  align-self: stretch;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #9AA7B4;
-  font-size: 13px;
-  line-height: 19.5px;
-}
-.sitio-de-estudio .datos {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 70px;
-}
-.sitio-de-estudio .div-3 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-.sitio-de-estudio .t-tulo-6 {
-  margin-top: -1px;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 700;
-  color: #9C6B3E;
-  font-size: 11px;
-  letter-spacing: 0.15px;
-  white-space: nowrap;
-}
-.sitio-de-estudio .direcci-n {
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #F3F5F7;
-  font-size: 14px;
-  line-height: 22.4px;
-  white-space: nowrap;
-}
-.sitio-de-estudio .canales {
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #F3F5F7;
-  font-size: 14px;
-  line-height: 22.4px;
-}
-.sitio-de-estudio .enlace-social {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.sitio-de-estudio .linkedin {
+.sitio-de-estudio .testimonios {
+  padding: 80px 20px;
+  background-color: #f9fbfd; /* Fondo claro sutil para separar */
+  text-align: center;
+  width: 100vw;
   position: relative;
-  width: 18px;
-  height: 18px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
 }
-.sitio-de-estudio .vector-5 {
-  position: absolute;
-  width: 94.45%;
-  height: 94.45%;
-  top: 5.55%;
-  left: 5.55%;
-}
-.sitio-de-estudio .etiqueta-3 {
-  margin-top: -0.5px;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #F3F5F7;
-  font-size: 14px;
-}
-.sitio-de-estudio .legales {
+.sitio-de-estudio .testimonios .subttulo-seccion,
+.sitio-de-estudio .testimonios .subttulo-seccion-claro {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 22px 80px;
-  width: 100%;
-  background-color: #0C1A2B;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
 }
-.sitio-de-estudio .text-wrapper-2 {
-  margin-top: -1px;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #9AA7B4;
+.sitio-de-estudio .testimonios .acento-rojo {
+  width: 16px;
+  height: 2px;
+  background-color: #c97d60; /* Color del acento de tu Figma */
+}
+.sitio-de-estudio .testimonios .texto-acento {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #1e293b;
+}
+.sitio-de-estudio .testimonios .cita-cliente {
+  font-family: "Lora", Georgia, serif;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #0f172a;
+  max-width: 850px;
+  margin: 0 auto 32px auto;
+}
+.sitio-de-estudio .testimonios .autor-cita {
+  margin-bottom: 48px;
+}
+.sitio-de-estudio .testimonios .nombre-autor {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #0f172a;
+}
+.sitio-de-estudio .testimonios .cargo-autor {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+.sitio-de-estudio .testimonios .menciones-reconocimientos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-family: "Inter", sans-serif;
   font-size: 11px;
-  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #94a3b8;
+}
+.sitio-de-estudio {
+  /* =================================================================
+     ESTILOS: SECCIÓN CONTACTO & FOOTER GENERAL (FONDO OSCURO)
+     ================================================================= */
+}
+.sitio-de-estudio .seccion-contacto-footer {
+  background-color: #11223f; /* Azul oscuro profundo de tu diseño */
+  color: #ffffff;
+  padding: 80px 40px 40px 40px;
+  box-sizing: border-box;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.sitio-de-estudio .seccion-contacto-footer .texto-acento-claro {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #94a3b8;
+}
+.sitio-de-estudio .seccion-contacto-footer .contacto-call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.sitio-de-estudio .seccion-contacto-footer .contacto-izquierda {
+  max-width: 600px;
+}
+.sitio-de-estudio .seccion-contacto-footer .subttulo-seccion-claro {
+  display: flex;
+  justify-content: flex-start;
+}
+.sitio-de-estudio .seccion-contacto-footer .titulo-contacto {
+  font-family: "Lora", Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+.sitio-de-estudio .seccion-contacto-footer .bajada-contacto {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #cbd5e1;
+  margin: 0;
+}
+.sitio-de-estudio .seccion-contacto-footer {
+  /* El botón marrón de Figma */
+}
+.sitio-de-estudio .seccion-contacto-footer .boton-solicitar {
+  display: inline-block;
+  background-color: #9c6644; /* Tono marrón/terracota */
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.sitio-de-estudio .seccion-contacto-footer .boton-solicitar:hover {
+  background-color: #7f5539;
+}
+.sitio-de-estudio .seccion-contacto-footer .divisor-footer {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+.sitio-de-estudio .seccion-contacto-footer {
+  /* Grilla del pie de página */
+}
+.sitio-de-estudio .seccion-contacto-footer .footer-principal {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.sitio-de-estudio .seccion-contacto-footer .columna-marca {
+  max-width: 320px;
+}
+.sitio-de-estudio .seccion-contacto-footer .logo-prisma-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.sitio-de-estudio .seccion-contacto-footer .eslogan-footer {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+.sitio-de-estudio .seccion-contacto-footer .columnas-info {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.sitio-de-estudio .seccion-contacto-footer .columna-info-bloque h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #9c6644; /* Mismo tono terracota para los títulos */
+  margin: 0 0 16px 0;
+}
+.sitio-de-estudio .seccion-contacto-footer .columna-info-bloque p,
+.sitio-de-estudio .seccion-contacto-footer .columna-info-bloque a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 0 0 8px 0;
+}
+.sitio-de-estudio .seccion-contacto-footer .columna-info-bloque a:hover {
+  color: #ffffff;
+}
+.sitio-de-estudio .seccion-contacto-footer {
+  /* Barra inferior de Legales */
+}
+.sitio-de-estudio .seccion-contacto-footer .footer-legales {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.sitio-de-estudio .seccion-contacto-footer .footer-legales .links-legales {
+  display: flex;
+  gap: 24px;
+}
+.sitio-de-estudio .seccion-contacto-footer .footer-legales .links-legales a {
+  color: #64748b;
+  text-decoration: none;
+}
+.sitio-de-estudio .seccion-contacto-footer .footer-legales .links-legales a:hover {
+  color: #cbd5e1;
+}
+.sitio-de-estudio {
+  /* Adaptación para pantallas de celulares */
+}
+@media (max-width: 768px) {
+  .sitio-de-estudio .seccion-contacto-footer .contacto-call-to-action,
+  .sitio-de-estudio .seccion-contacto-footer .footer-principal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sitio-de-estudio .seccion-contacto-footer .columnas-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sitio-de-estudio .testimonios .cita-cliente {
+    font-size: 20px;
+  }
 }
 
 .sitio-de-estudio .hamburguesa {
