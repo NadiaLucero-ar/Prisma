@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 .sitio-de-estudio {
   display: flex;
@@ -6,4 +6,8 @@
   align-items: flex-start;
   position: relative;
   background-color: $color-bg;
+}
+
+html {
+  scroll-behavior: smooth;
 }

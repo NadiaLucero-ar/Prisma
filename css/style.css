@@ -6,6 +6,10 @@
   background-color: #F7F8FA;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sitio-de-estudio .navegacin {
   display: flex;
   height: 92px;
