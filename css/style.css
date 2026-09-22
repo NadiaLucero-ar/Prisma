@@ -801,11 +801,20 @@ html {
     background-color: #16283F;
     z-index: 100;
   }
-  .sitio-de-estudio .navbar.abierto {
+  .sitio-de-estudio .navbar.active {
     display: flex;
   }
   .sitio-de-estudio .hamburguesa {
     display: flex;
+  }
+  .sitio-de-estudio .hamburguesa.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .sitio-de-estudio .hamburguesa.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .sitio-de-estudio .hamburguesa.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .sitio-de-estudio .portada {
     height: auto;

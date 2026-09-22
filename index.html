@@ -281,5 +281,22 @@
       <!-- Cierre de seccion-contacto-footer -->
     </div>
     <!-- Cierre de sitio-de-estudio -->
+    <script>
+      // Seleccionamos el botón de la hamburguesa y la barra de navegación
+      const botonHamburguesa = document.querySelector(".hamburguesa");
+      const navBar = document.querySelector(".navbar");
+
+      botonHamburguesa.addEventListener("click", () => {
+        // Intercambia la clase "active" en la barra de navegación
+        navBar.classList.toggle("active");
+
+        // Cambia el estado de accesibilidad (true/false)
+        const estaExpandido = botonHamburguesa.getAttribute("aria-expanded") === "true";
+        botonHamburguesa.setAttribute("aria-expanded", !estaExpandido);
+
+        // Opcional: Si querés animar las tres rayitas del botón a una "X"
+        botonHamburguesa.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
