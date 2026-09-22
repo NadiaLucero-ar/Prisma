@@ -27,6 +27,7 @@ nova-landing/
 ## Cómo compilar en VS Code
 
 **Opción A — extensión "Live Sass Compiler" (más simple, un clic):**
+
 1. Instalá la extensión "Live Sass Compiler" de Glenn Marks en VS Code.
 2. Abrí este proyecto en VS Code.
 3. Click en "Watch Sass" abajo a la derecha en la barra de estado.
@@ -35,6 +36,7 @@ nova-landing/
 Si la extensión pregunta dónde guardar el output, apuntala a `css/style.css` (podés configurarlo en `.vscode/settings.json` con la clave `liveSassCompile.settings.formats`).
 
 **Opción B — línea de comandos:**
+
 ```bash
 npm install -g sass
 sass scss/main.scss css/style.css --watch
@@ -48,3 +50,5 @@ sass scss/main.scss css/style.css --watch
 - [ ] El email de contacto (`prisma.abogacia@gmail.com`) es un placeholder — cambialo por el real cuando lo tengas.
 - [ ] Se sacó la tarjeta de "Derecho Privado" (civil/consumidor) de la grilla de 6 a 5 áreas, siguiendo la propuesta de "Prisma" que armaste. Si en realidad seguís atendiendo esos casos, avisame y la sumamos de vuelta como sexta tarjeta.
 - [ ] Media queries para mobile/tablet (el layout está pensado a 1440px fijo, como el boceto de Figma).
+
+# Diseño - Boceto interactivo en Figma: [ver aquí] https://www.figma.com/design/T0SufoVwuoPgtjxpf3GRJo/Prisma?node-id=2-453&m=dev&t=LdKSwXPQVjU76WXN-1 - Capturas del boceto: ver carpeta `design/` - Sitio publicado: https://nadialucero-ar.github.io/Prisma/
