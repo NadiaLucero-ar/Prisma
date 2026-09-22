@@ -1,0 +1,10 @@
+// Punto de entrada: solo importa partials, no define estilos propios.
+// Cada partial ya trae sus propias variables/mixins con @use.
+@use "base";
+@use "nav";
+@use "hero";
+@use "servicios";
+@use "estudio";
+@use "confianza";
+@use "contacto";
+@use "responsive";

@@ -1,0 +1,95 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.sitio-de-estudio {
+  .el-estudio {
+    display: flex;
+    width: 1440px;
+    height: 680px;
+    align-items: flex-start;
+    background-color: $color-bg-alt;
+  }
+
+  .equipo {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: flex-start;
+    padding: 76px 0 76px 80px;
+    align-self: stretch;
+  }
+
+  .fotografa {
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .historia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 94px 76px;
+    flex: 1;
+    align-self: stretch;
+  }
+
+  .t-tulo-4 {
+    align-self: stretch;
+    @include titulo-serif(44px, $color-azul-noche, 0, 48.4px);
+  }
+
+  .descripci-n-2 {
+    align-self: stretch;
+    color: $color-text-body;
+    line-height: 27.2px;
+    font-family: $font-sans;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .principios {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .principio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .n-mero {
+    margin-top: -1px;
+    font-family: $font-serif;
+    font-weight: 400;
+    color: $color-bronce;
+    font-size: 18px;
+  }
+
+  .valor {
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-azul-noche;
+    font-size: 14px;
+  }
+
+  .botn-3 {
+    @include boton($color-bg-alt, $color-azul-noche);
+    border: 1px solid rgba($color-bronce, 0.3);
+  }
+
+  .etiqueta-2 {
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-azul-noche;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+  }
+}

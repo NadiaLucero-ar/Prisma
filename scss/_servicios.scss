@@ -1,0 +1,153 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.sitio-de-estudio {
+  .reas-de-prctica {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: flex-start;
+    gap: 56px;
+    padding: 96px 80px;
+    background-color: $color-bg;
+  }
+
+  .encabezado {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .ttulo-de-seccin {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .text-wrapper {
+    margin-top: -1px;
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-azul;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+
+  .t-tulo-2 {
+    align-self: stretch;
+    @include titulo-serif(44px, $color-azul-noche, 0, 47.5px);
+  }
+
+  .p {
+    width: 420px;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-body;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .servicios {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .rea {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: $radius-md;
+    border: 1px solid rgba($color-plata, 0.35);
+    overflow: hidden;
+    box-shadow: $shadow-card;
+  }
+
+  .cono {
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-bg-alt;
+    border: 1px solid rgba($color-bronce, 0.25);
+    border-radius: $radius-pill;
+    overflow: hidden;
+  }
+
+  .div-2 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+
+  .img {
+    position: absolute;
+    width: 86.33%;
+    height: 94.67%;
+    top: 5.33%;
+    left: 13.67%;
+  }
+
+  .t-tulo-3 {
+    align-self: stretch;
+    @include titulo-serif(24px, $color-azul-noche);
+  }
+
+  .descripci-n {
+    align-self: stretch;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-body;
+    font-size: 15px;
+    line-height: 23.2px;
+  }
+
+  .enlace-2 {
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-azul;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+  }
+
+  .vector-2 {
+    position: absolute;
+    width: 94.78%;
+    height: 90.50%;
+    top: 9.50%;
+    left: 5.22%;
+  }
+
+  .vector-3 {
+    position: absolute;
+    width: 95.27%;
+    height: 90.50%;
+    top: 9.50%;
+    left: 4.73%;
+  }
+
+  .shield {
+    position: relative;
+    width: 83.34%;
+    height: 83.34%;
+    top: 8.33%;
+    left: 8.33%;
+    display: flex;
+  }
+
+  .vector-4 {
+    flex: 1;
+    width: 15.39px;
+  }
+}

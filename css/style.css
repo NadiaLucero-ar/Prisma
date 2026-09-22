@@ -1,0 +1,820 @@
+.sitio-de-estudio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #F7F8FA;
+}
+
+.sitio-de-estudio .navegacin {
+  display: flex;
+  height: 92px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  width: 100%;
+  border-bottom: 1px solid rgba(169, 180, 190, 0.15);
+}
+.sitio-de-estudio .marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.sitio-de-estudio .logo-prisma {
+  width: 42px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(169, 180, 190, 0.4);
+  background-image: url("../img/rectangle.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sitio-de-estudio .nombre {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sitio-de-estudio .estudio {
+  margin-top: -1px;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 700;
+  color: #F3F5F7;
+  font-size: 20px;
+}
+.sitio-de-estudio .descriptor {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #9AA7B4;
+  font-size: 10px;
+  letter-spacing: 0.22px;
+  white-space: nowrap;
+}
+.sitio-de-estudio .navbar {
+  display: inline-flex;
+  align-items: center;
+  gap: 34px;
+}
+.sitio-de-estudio .enlace {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #F3F5F7;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.sitio-de-estudio .enlace:hover {
+  border-color: rgba(169, 180, 190, 0.4);
+  background-color: rgba(169, 180, 190, 0.08);
+}
+.sitio-de-estudio .botn {
+  display: inline-flex;
+  height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  background-color: #9C6B3E;
+  color: #F3F5F7;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(169, 180, 190, 0.3);
+}
+.sitio-de-estudio .etiqueta {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #F3F5F7;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+}
+.sitio-de-estudio .arrow-right {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.sitio-de-estudio .vector {
+  position: absolute;
+  width: 83.86%;
+  height: 83.86%;
+  top: 16.14%;
+  left: 16.14%;
+}
+
+.sitio-de-estudio .portada {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 860px;
+  align-items: flex-start;
+  position: relative;
+  background-color: #16283F;
+}
+.sitio-de-estudio .contenido-principal {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 54px 0 0 80px;
+  flex: 1;
+  width: 100%;
+}
+.sitio-de-estudio .presentacin {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.sitio-de-estudio .div {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.sitio-de-estudio .div .acento {
+  width: 28px;
+  height: 2px;
+  background-color: #9C6B3E;
+}
+.sitio-de-estudio .texto {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #F3F5F7;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+.sitio-de-estudio .t-tulo {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 56px;
+  color: #F3F5F7;
+  letter-spacing: 0;
+  line-height: 62px;
+}
+.sitio-de-estudio .introducci-n {
+  width: 520px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #9AA7B4;
+  font-size: 20px;
+  line-height: 31px;
+}
+.sitio-de-estudio .botn-2 {
+  display: inline-flex;
+  height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  background-color: #9C6B3E;
+  color: #F3F5F7;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(169, 180, 190, 0.3);
+}
+.sitio-de-estudio .retrato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  background-image: linear-gradient(180deg, rgba(15, 28, 48, 0.88) 0%, rgba(160, 98, 74, 0.35) 100%), url("../img/retrato-institucional.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sitio-de-estudio .velo {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(26, 43, 74, 0.8) 0%, rgba(26, 43, 74, 0) 60%);
+}
+
+.sitio-de-estudio .reas-de-prctica {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: flex-start;
+  gap: 56px;
+  padding: 96px 80px;
+  background-color: #F7F8FA;
+}
+.sitio-de-estudio .encabezado {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.sitio-de-estudio .ttulo-de-seccin {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  align-items: flex-start;
+  gap: 18px;
+}
+.sitio-de-estudio .text-wrapper {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #16283F;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+.sitio-de-estudio .t-tulo-2 {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 44px;
+  color: #0C1A2B;
+  letter-spacing: 0;
+  line-height: 47.5px;
+}
+.sitio-de-estudio .p {
+  width: 420px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #5A6470;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.sitio-de-estudio .servicios {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+.sitio-de-estudio .rea {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(169, 180, 190, 0.35);
+  overflow: hidden;
+  box-shadow: 0px 14px 32px rgba(12, 26, 43, 0.08);
+}
+.sitio-de-estudio .cono {
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEF1F5;
+  border: 1px solid rgba(156, 107, 62, 0.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.sitio-de-estudio .div-2 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.sitio-de-estudio .img {
+  position: absolute;
+  width: 86.33%;
+  height: 94.67%;
+  top: 5.33%;
+  left: 13.67%;
+}
+.sitio-de-estudio .t-tulo-3 {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #0C1A2B;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.sitio-de-estudio .descripci-n {
+  align-self: stretch;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #5A6470;
+  font-size: 15px;
+  line-height: 23.2px;
+}
+.sitio-de-estudio .enlace-2 {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #16283F;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+}
+.sitio-de-estudio .vector-2 {
+  position: absolute;
+  width: 94.78%;
+  height: 90.5%;
+  top: 9.5%;
+  left: 5.22%;
+}
+.sitio-de-estudio .vector-3 {
+  position: absolute;
+  width: 95.27%;
+  height: 90.5%;
+  top: 9.5%;
+  left: 4.73%;
+}
+.sitio-de-estudio .shield {
+  position: relative;
+  width: 83.34%;
+  height: 83.34%;
+  top: 8.33%;
+  left: 8.33%;
+  display: flex;
+}
+.sitio-de-estudio .vector-4 {
+  flex: 1;
+  width: 15.39px;
+}
+
+.sitio-de-estudio .el-estudio {
+  display: flex;
+  width: 1440px;
+  height: 680px;
+  align-items: flex-start;
+  background-color: #EEF1F5;
+}
+.sitio-de-estudio .equipo {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  align-items: flex-start;
+  padding: 76px 0 76px 80px;
+  align-self: stretch;
+}
+.sitio-de-estudio .fotografa {
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sitio-de-estudio .historia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 94px 76px;
+  flex: 1;
+  align-self: stretch;
+}
+.sitio-de-estudio .t-tulo-4 {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 44px;
+  color: #0C1A2B;
+  letter-spacing: 0;
+  line-height: 48.4px;
+}
+.sitio-de-estudio .descripci-n-2 {
+  align-self: stretch;
+  color: #5A6470;
+  line-height: 27.2px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sitio-de-estudio .principios {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.sitio-de-estudio .principio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+}
+.sitio-de-estudio .n-mero {
+  margin-top: -1px;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  color: #9C6B3E;
+  font-size: 18px;
+}
+.sitio-de-estudio .valor {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #0C1A2B;
+  font-size: 14px;
+}
+.sitio-de-estudio .botn-3 {
+  display: inline-flex;
+  height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  background-color: #EEF1F5;
+  color: #0C1A2B;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(156, 107, 62, 0.3);
+}
+.sitio-de-estudio .etiqueta-2 {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #0C1A2B;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+}
+
+.sitio-de-estudio .confianza {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: center;
+  gap: 32px;
+  padding: 96px 180px;
+  background-color: #F7F8FA;
+}
+.sitio-de-estudio .testimonio {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #0C1A2B;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  line-height: 51.3px;
+}
+.sitio-de-estudio .autor {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.sitio-de-estudio .nombre-2 {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #16283F;
+  font-size: 14px;
+}
+.sitio-de-estudio .cargo {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #5A6470;
+  font-size: 13px;
+}
+.sitio-de-estudio .reconocimientos {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 20px;
+}
+.sitio-de-estudio .reconocimiento {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #5A6470;
+  font-size: 12px;
+  letter-spacing: 0.14px;
+}
+
+.sitio-de-estudio .contacto-y-pie {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: flex-start;
+  background-color: #16283F;
+}
+.sitio-de-estudio .invitacin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 86px 80px;
+  width: 100%;
+}
+.sitio-de-estudio .mensaje {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  align-items: flex-start;
+  gap: 20px;
+}
+.sitio-de-estudio .t-tulo-5 {
+  align-self: stretch;
+  font-family: "Lora", Helvetica, serif;
+  font-weight: 400;
+  font-size: 52px;
+  color: #F3F5F7;
+  letter-spacing: 0;
+  line-height: 56.2px;
+}
+.sitio-de-estudio .descripci-n-3 {
+  width: 590px;
+  color: #9AA7B4;
+  line-height: 25.6px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sitio-de-estudio .informacin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 58px 80px;
+  width: 100%;
+  border-top: 1px solid #A9B4BE;
+}
+.sitio-de-estudio .identidad {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  gap: 18px;
+}
+.sitio-de-estudio .logo-prisma-footer {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(169, 180, 190, 0.4);
+  background-image: url("../img/image.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sitio-de-estudio .nombre-3 {
+  font-family: "Lora", Helvetica, serif;
+  color: #F3F5F7;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sitio-de-estudio .lema {
+  align-self: stretch;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #9AA7B4;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+.sitio-de-estudio .datos {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+.sitio-de-estudio .div-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.sitio-de-estudio .t-tulo-6 {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #9C6B3E;
+  font-size: 11px;
+  letter-spacing: 0.15px;
+  white-space: nowrap;
+}
+.sitio-de-estudio .direcci-n {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #F3F5F7;
+  font-size: 14px;
+  line-height: 22.4px;
+  white-space: nowrap;
+}
+.sitio-de-estudio .canales {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #F3F5F7;
+  font-size: 14px;
+  line-height: 22.4px;
+}
+.sitio-de-estudio .enlace-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.sitio-de-estudio .linkedin {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.sitio-de-estudio .vector-5 {
+  position: absolute;
+  width: 94.45%;
+  height: 94.45%;
+  top: 5.55%;
+  left: 5.55%;
+}
+.sitio-de-estudio .etiqueta-3 {
+  margin-top: -0.5px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #F3F5F7;
+  font-size: 14px;
+}
+.sitio-de-estudio .legales {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 22px 80px;
+  width: 100%;
+  background-color: #0C1A2B;
+}
+.sitio-de-estudio .text-wrapper-2 {
+  margin-top: -1px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #9AA7B4;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.sitio-de-estudio .hamburguesa {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110;
+  position: relative;
+}
+.sitio-de-estudio .hamburguesa span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #F3F5F7;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .sitio-de-estudio .portada,
+  .sitio-de-estudio .reas-de-prctica,
+  .sitio-de-estudio .el-estudio,
+  .sitio-de-estudio .confianza,
+  .sitio-de-estudio .contacto-y-pie {
+    width: 100%;
+  }
+  .sitio-de-estudio .navegacin,
+  .sitio-de-estudio .contenido-principal,
+  .sitio-de-estudio .reas-de-prctica,
+  .sitio-de-estudio .invitacin,
+  .sitio-de-estudio .informacin,
+  .sitio-de-estudio .legales {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sitio-de-estudio .t-tulo {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .sitio-de-estudio .presentacin {
+    width: 55%;
+  }
+  .sitio-de-estudio .servicios {
+    flex-wrap: wrap;
+  }
+  .sitio-de-estudio .servicios .rea {
+    flex: 1 1 calc(50% - 8px);
+  }
+}
+@media (max-width: 768px) {
+  .sitio-de-estudio .navbar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px;
+    background-color: #16283F;
+    z-index: 100;
+  }
+  .sitio-de-estudio .navbar.abierto {
+    display: flex;
+  }
+  .sitio-de-estudio .hamburguesa {
+    display: flex;
+  }
+  .sitio-de-estudio .portada {
+    height: auto;
+  }
+  .sitio-de-estudio .contenido-principal {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 32px;
+  }
+  .sitio-de-estudio .presentacin {
+    width: 100%;
+  }
+  .sitio-de-estudio .t-tulo {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .sitio-de-estudio .introducci-n {
+    width: 100%;
+    font-size: 17px;
+  }
+  .sitio-de-estudio .retrato {
+    width: 100%;
+    height: 280px;
+    align-self: stretch;
+    flex: none;
+  }
+  .sitio-de-estudio .reas-de-prctica {
+    height: auto;
+    padding: 56px 24px;
+    gap: 32px;
+  }
+  .sitio-de-estudio .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .sitio-de-estudio .ttulo-de-seccin,
+  .sitio-de-estudio .p {
+    width: 100%;
+  }
+  .sitio-de-estudio .servicios {
+    flex-direction: column;
+  }
+  .sitio-de-estudio .servicios .rea {
+    flex: 1 1 100%;
+  }
+  .sitio-de-estudio .el-estudio {
+    flex-direction: column;
+    height: auto;
+  }
+  .sitio-de-estudio .equipo {
+    width: 100%;
+    padding: 40px 24px 0;
+  }
+  .sitio-de-estudio .fotografa {
+    height: 260px;
+  }
+  .sitio-de-estudio .historia {
+    padding: 40px 24px;
+  }
+  .sitio-de-estudio .t-tulo-4 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .sitio-de-estudio .principios {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sitio-de-estudio .confianza {
+    padding: 56px 24px;
+  }
+  .sitio-de-estudio .testimonio {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .sitio-de-estudio .reconocimientos {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .sitio-de-estudio .invitacin {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 56px 24px;
+  }
+  .sitio-de-estudio .mensaje {
+    width: 100%;
+  }
+  .sitio-de-estudio .t-tulo-5 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .sitio-de-estudio .descripci-n-3 {
+    width: 100%;
+  }
+  .sitio-de-estudio .informacin {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 24px;
+  }
+  .sitio-de-estudio .identidad {
+    width: 100%;
+  }
+  .sitio-de-estudio .datos {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .sitio-de-estudio .legales {
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 24px;
+  }
+}

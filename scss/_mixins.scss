@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+// Botón sólido reutilizable (nav, hero, CTA final)
+@mixin boton($bg: $color-bronce, $color: $color-text-onDark) {
+  display: inline-flex;
+  height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  background-color: $bg;
+  color: $color;
+  border-radius: $radius-sm;
+  overflow: hidden;
+}
+
+// Título editorial en serif, reutilizado en cada sección
+@mixin titulo-serif($size, $color: $color-text-heading, $spacing: 0, $line-height: normal) {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: $size;
+  color: $color;
+  letter-spacing: $spacing;
+  line-height: $line-height;
+}
+
+// Eyebrow (acento + texto en mayúscula pequeña) sobre cada título de sección
+@mixin eyebrow($color: $color-bronce, $text-color: $color-text-heading) {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  .acento {
+    width: 28px;
+    height: 2px;
+    background-color: $color;
+  }
+}

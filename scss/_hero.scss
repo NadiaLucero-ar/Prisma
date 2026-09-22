@@ -1,0 +1,90 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.sitio-de-estudio {
+  .portada {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 860px;
+    align-items: flex-start;
+    position: relative;
+    background-color: $color-azul;
+  }
+
+  .contenido-principal {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 54px 0 0 80px;
+    flex: 1;
+    width: 100%;
+  }
+
+  .presentacin {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  .div {
+    @include eyebrow;
+  }
+
+  .texto {
+    margin-top: -1px;
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-text-onDark;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+
+  .t-tulo {
+    align-self: stretch;
+    @include titulo-serif(56px, $color-text-onDark, 0, 62px); // antes: 68px, -1.22px, 70px
+  }
+
+  .introducci-n {
+    width: 520px;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark-muted;
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .botn-2 {
+    @include boton;
+    border: 1px solid rgba($color-plata, 0.3);
+  }
+
+  // Tratamiento tipo Uría Menéndez: foto de fondo (biblioteca jurídica / mapamundi)
+  // + degradé propio en modo "multiply" para que la imagen se sienta parte de la marca.
+  // Reemplazá la url de abajo por tu propia foto cuando la tengas.
+  .retrato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    background-image:
+      linear-gradient(180deg, rgba(15, 28, 48, 0.88) 0%, rgba(160, 98, 74, 0.35) 100%),
+      url("../img/retrato-institucional.jpg"); // ← acá, cambiá .png por .jpg
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .velo {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(26, 43, 74, 0.8) 0%, rgba(26, 43, 74, 0) 60%);
+  }
+}

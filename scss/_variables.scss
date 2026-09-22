@@ -1,0 +1,32 @@
+// ============================
+// Paleta de color — Prisma • Abogacía Boutique
+// Azul profundo + plata + bronce: la "descomposición de luz" del prisma
+// ============================
+$color-azul: #16283F;         // azul profundo, base institucional
+$color-azul-noche: #0C1A2B;   // azul casi negro, para footer y títulos fuertes
+$color-bronce: #9C6B3E;       // acento cálido — reemplaza al antiguo terracota
+$color-plata: #A9B4BE;        // acento frío — bordes, divisores, detalles
+
+$color-bg: #F7F8FA;
+$color-bg-alt: #EEF1F5;
+
+$color-text-onDark: #F3F5F7;
+$color-text-onDark-muted: #9AA7B4;
+$color-text-body: #5A6470;
+$color-text-heading: #0F1C2B;
+$color-border-footer: $color-plata;
+
+// ============================
+// Tipografía
+// ============================
+$font-serif: "Lora", Helvetica, serif;
+$font-sans: "Inter", Helvetica, sans-serif;
+
+// ============================
+// Radios y sombras
+// ============================
+$radius-sm: 4px;
+$radius-md: 12px;
+$radius-pill: 999px;
+
+$shadow-card: 0px 14px 32px rgba(12, 26, 43, 0.08);

@@ -1,0 +1,104 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.sitio-de-estudio {
+  .navegacin {
+    display: flex;
+    height: 92px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    width: 100%;
+    border-bottom: 1px solid rgba($color-plata, 0.15);
+  }
+
+  .marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-prisma {
+    width: 42px;
+    height: 40px;
+    border-radius: $radius-sm;
+    border: 1px solid rgba($color-plata, 0.4);
+    background-image: url("../img/rectangle.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .nombre {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .estudio {
+    margin-top: -1px;
+    font-family: $font-serif;
+    font-weight: 700;
+    color: $color-text-onDark;
+    font-size: 20px;
+  }
+
+  .descriptor {
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark-muted;
+    font-size: 10px;
+    letter-spacing: 0.22px;
+    white-space: nowrap;
+  }
+
+  .navbar {
+    display: inline-flex;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .enlace {
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: $radius-sm;
+    border: 1px solid transparent;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease;
+
+    &:hover {
+      border-color: rgba($color-plata, 0.4);
+      background-color: rgba($color-plata, 0.08);
+    }
+  }
+
+  .botn {
+    @include boton;
+    border: 1px solid rgba($color-plata, 0.3);
+  }
+
+  .etiqueta {
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-text-onDark;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+  }
+
+  .arrow-right {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+
+  .vector {
+    position: absolute;
+    width: 83.86%;
+    height: 83.86%;
+    top: 16.14%;
+    left: 16.14%;
+  }
+}

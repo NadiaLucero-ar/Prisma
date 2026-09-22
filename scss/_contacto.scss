@@ -1,0 +1,171 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.sitio-de-estudio {
+  .contacto-y-pie {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: flex-start;
+    background-color: $color-azul;
+  }
+
+  .invitacin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 86px 80px;
+    width: 100%;
+  }
+
+  .mensaje {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .t-tulo-5 {
+    align-self: stretch;
+    @include titulo-serif(52px, $color-text-onDark, 0, 56.2px);
+  }
+
+  .descripci-n-3 {
+    width: 590px;
+    color: $color-text-onDark-muted;
+    line-height: 25.6px;
+    font-family: $font-sans;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .informacin {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 58px 80px;
+    width: 100%;
+    border-top: 1px solid $color-border-footer;
+  }
+
+  .identidad {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .logo-prisma-footer {
+    width: 32px;
+    height: 32px;
+    border-radius: $radius-sm;
+    border: 1px solid rgba($color-plata, 0.4);
+    background-image: url("../img/image.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .nombre-3 {
+    font-family: $font-serif;
+    color: $color-text-onDark;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .lema {
+    align-self: stretch;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark-muted;
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+
+  .datos {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 70px;
+  }
+
+  .div-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .t-tulo-6 {
+    margin-top: -1px;
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-bronce;
+    font-size: 11px;
+    letter-spacing: 0.15px;
+    white-space: nowrap;
+  }
+
+  .direcci-n {
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark;
+    font-size: 14px;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+
+  .canales {
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .enlace-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .linkedin {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+
+  .vector-5 {
+    position: absolute;
+    width: 94.45%;
+    height: 94.45%;
+    top: 5.55%;
+    left: 5.55%;
+  }
+
+  .etiqueta-3 {
+    margin-top: -0.5px;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark;
+    font-size: 14px;
+  }
+
+  .legales {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 22px 80px;
+    width: 100%;
+    background-color: $color-azul-noche;
+  }
+
+  .text-wrapper-2 {
+    margin-top: -1px;
+    font-family: $font-sans;
+    font-weight: 400;
+    color: $color-text-onDark-muted;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
