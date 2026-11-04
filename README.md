@@ -42,13 +42,11 @@ npm install -g sass
 sass scss/main.scss css/style.css --watch
 ```
 
-## Pendiente para vos
+## Pendientes
 
-- [ ] **Logo real**: el isotipo de la estrella helicoidal en `index.html` (dentro de `.logo-prisma` y `.logo-prisma-footer`) es un SVG placeholder mío, no el diseño final. Reemplazalo por el que exportes de Figma — es un `<svg>` inline, así que podés pegar el path/código de Figma directo ahí.
-- [ ] Reemplazar las imágenes de `img/` (retrato del hero, foto de equipo) por tus propias fotos o las exportadas de Figma.
-- [ ] El hero (`_hero.scss`, clase `.retrato`) tiene el degradé azul/bronce tipo Uría Menéndez aplicado — falta que `retrato-institucional.png` sea una foto real (biblioteca jurídica o mapamundi) para ver el efecto completo.
-- [ ] El email de contacto (`prisma.abogacia@gmail.com`) es un placeholder — cambialo por el real cuando lo tengas.
-- [ ] Se sacó la tarjeta de "Derecho Privado" (civil/consumidor) de la grilla de 6 a 5 áreas, siguiendo la propuesta de "Prisma" que armaste. Si en realidad seguís atendiendo esos casos, avisame y la sumamos de vuelta como sexta tarjeta.
+- [ ] Reemplazar las imágenes de `img/` (retrato del hero, foto de equipo) por propias fotos o las exportadas de Figma.
+- [ ] El email de contacto (`prisma.abogacia@gmail.com`) es un placeholder — cambiarlo por el real.
+- [ ] Se sacó la tarjeta de "Derecho Privado" (civil/consumidor) de la grilla de 6 a 5 áreas, siguiendo la propuesta de "Prisma" que arme. 
 - [ ] Media queries para mobile/tablet (el layout está pensado a 1440px fijo, como el boceto de Figma).
 
 # Diseño - Boceto interactivo en Figma: [ver aquí] https://www.figma.com/design/T0SufoVwuoPgtjxpf3GRJo/Prisma?node-id=2-453&m=dev&t=LdKSwXPQVjU76WXN-1 - Capturas del boceto: ver carpeta `design/` - Sitio publicado: https://nadialucero-ar.github.io/Prisma/
