@@ -1,28 +1,60 @@
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 .navegacion {
-  background: $color-azul; min-height: 92px;
-  border-bottom: 1px solid rgba($color-plata, .15);
-  .marca { display: inline-flex; align-items: center; gap: 14px; }
+  background: $color-azul;
+  min-height: 92px;
+  border-bottom: 1px solid rgba($color-plata, 0.15);
+  .marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
   .logo-prisma {
-    width: 42px; height: 40px; border-radius: $radius-sm; border: 1px solid rgba($color-plata, .4);
+    width: 42px;
+    height: 40px;
+    border-radius: $radius-sm;
+    border: 1px solid rgba($color-plata, 0.4);
     background: url("../img/rectangle.jpg") 50% 50% / cover;
   }
-  .nombre { display: inline-flex; flex-direction: column; gap: 2px; }
-  .estudio { font: 700 20px $font-serif; color: $color-text-onDark; }
-  .descriptor { font: 400 10px $font-sans; letter-spacing: .22px; color: $color-text-onDark-muted; white-space: nowrap; }
+  .nombre {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .estudio {
+    font: 700 20px $font-serif;
+    color: $color-text-onDark;
+    background: transparent !important;
+  }
+  .descriptor {
+    font: 400 10px $font-sans;
+    letter-spacing: 0.22px;
+    color: $color-text-onDark-muted;
+    white-space: nowrap;
+  }
 
   .nav-link {
-    font-size: 14px; color: $color-text-onDark; padding: 8px 16px;
-    border: 1px solid transparent; border-radius: $radius-sm;
-    transition: border-color .15s, background-color .15s;
+    font-size: 14px;
+    color: $color-text-onDark;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: $radius-sm;
+    transition:
+      border-color 0.15s,
+      background-color 0.15s;
     // Dorado translúcido: el blanco de la letra se mantiene
-    &:hover, &:focus-visible, &.active {
+    &:hover,
+    &:focus-visible,
+    &.active {
       color: $color-text-onDark;
       background-color: $color-oro-suave;
-      border-color: rgba($color-oro, .55);
+      border-color: rgba($color-oro, 0.55);
     }
   }
 }
-@media (max-width: 991.98px) { .navegacion .navbar-collapse { padding-bottom: 16px; } }
+@media (max-width: 991.98px) {
+  .navegacion .navbar-collapse {
+    padding-bottom: 16px;
+  }
+}

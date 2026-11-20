@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", Helvetica, sans-serif;
-  background: #f7f8fa;
-  color: #5a6470;
+  background: #F7F8FA;
+  color: #5A6470;
 }
 
 section[id] {
@@ -16,22 +16,19 @@ section[id] {
 .eyebrow .acento {
   width: 28px;
   height: 2px;
-  background-color: #9c6b3e;
+  background-color: #9C6B3E;
 }
 .eyebrow .texto {
-  font:
-    700 13px/1 "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 13px/1 "Inter", Helvetica, sans-serif;
   letter-spacing: 0.2px;
-  color: #16283f;
+  color: #16283F;
 }
 
 .titulo-seccion {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: clamp(30px, 4vw, 44px);
-  color: #0c1a2b;
+  color: #0C1A2B;
   letter-spacing: 0;
   line-height: 1.1;
 }
@@ -42,23 +39,19 @@ section[id] {
   align-items: center;
   gap: 12px;
   padding: 0 24px;
-  background-color: #9c6b3e;
-  color: #f3f5f7;
+  background-color: #9C6B3E;
+  color: #F3F5F7;
   border-radius: 4px;
   overflow: hidden;
   height: 48px;
   justify-content: center;
-  font:
-    700 13px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 13px "Inter", Helvetica, sans-serif;
   letter-spacing: 0.1px;
   border: 1px solid rgba(169, 180, 190, 0.3);
 }
-.btn-prisma:hover,
-.btn-prisma:focus-visible {
-  background-color: #865a32;
-  color: #f3f5f7;
+.btn-prisma:hover, .btn-prisma:focus-visible {
+  background-color: #865A32;
+  color: #F3F5F7;
 }
 
 .btn-prisma-claro {
@@ -67,23 +60,20 @@ section[id] {
   align-items: center;
   gap: 12px;
   padding: 0 24px;
-  background-color: #f7f8fa;
-  color: #0c1a2b;
+  background-color: #F7F8FA;
+  color: #0C1A2B;
   border-radius: 4px;
   overflow: hidden;
-  font:
-    700 13px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 13px "Inter", Helvetica, sans-serif;
   border: 1px solid rgba(156, 107, 62, 0.4);
 }
 .btn-prisma-claro:hover {
   background-color: rgba(212, 175, 106, 0.28);
-  color: #0c1a2b;
+  color: #0C1A2B;
 }
 
 .navegacion {
-  background: #16283f;
+  background: #16283F;
   min-height: 92px;
   border-bottom: 1px solid rgba(169, 180, 190, 0.15);
 }
@@ -97,7 +87,7 @@ section[id] {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(169, 180, 190, 0.4);
-  background: url("../img/rectangle.jpg") 50% 50% / cover;
+  background: url("../img/rectangle.jpg") 50% 50%/cover;
 }
 .navegacion .nombre {
   display: inline-flex;
@@ -105,36 +95,26 @@ section[id] {
   gap: 2px;
 }
 .navegacion .estudio {
-  font:
-    700 20px "Lora",
-    Helvetica,
-    serif;
-  color: #f3f5f7;
+  font: 700 20px "Lora", Helvetica, serif;
+  color: #F3F5F7;
   background: transparent !important;
 }
 .navegacion .descriptor {
-  font:
-    400 10px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 400 10px "Inter", Helvetica, sans-serif;
   letter-spacing: 0.22px;
-  color: #9aa7b4;
+  color: #9AA7B4;
   white-space: nowrap;
 }
 .navegacion .nav-link {
   font-size: 14px;
-  color: #f3f5f7;
+  color: #F3F5F7;
   padding: 8px 16px;
   border: 1px solid transparent;
   border-radius: 4px;
-  transition:
-    border-color 0.15s,
-    background-color 0.15s;
+  transition: border-color 0.15s, background-color 0.15s;
 }
-.navegacion .nav-link:hover,
-.navegacion .nav-link:focus-visible,
-.navegacion .nav-link.active {
-  color: #f3f5f7;
+.navegacion .nav-link:hover, .navegacion .nav-link:focus-visible, .navegacion .nav-link.active {
+  color: #F3F5F7;
   background-color: rgba(212, 175, 106, 0.28);
   border-color: rgba(212, 175, 106, 0.55);
 }
@@ -145,11 +125,11 @@ section[id] {
   }
 }
 .portada {
-  background: #16283f;
+  background: #16283F;
   padding: 56px 0;
 }
 .portada .eyebrow .texto {
-  color: #f3f5f7;
+  color: #F3F5F7;
 }
 
 .presentacion {
@@ -162,7 +142,7 @@ section[id] {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: clamp(40px, 5.2vw, 68px);
-  color: #f3f5f7;
+  color: #F3F5F7;
   letter-spacing: -1.2px;
   line-height: 1.04;
   margin: 0;
@@ -172,7 +152,7 @@ section[id] {
   max-width: 520px;
   font-size: 19px;
   line-height: 1.6;
-  color: #9aa7b4;
+  color: #9AA7B4;
   margin: 0;
 }
 
@@ -187,7 +167,7 @@ section[id] {
   width: 100%;
   height: 440px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .miradas .zoom-a {
   transform: scale(1.8);
@@ -212,19 +192,16 @@ section[id] {
   padding: 0 28px 56px;
 }
 .miradas .mirada-etiqueta {
-  font:
-    700 12px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 12px "Inter", Helvetica, sans-serif;
   letter-spacing: 0.2px;
-  color: #d4af6a;
+  color: #D4AF6A;
   margin: 0 0 8px;
 }
 .miradas .mirada-titulo {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: clamp(22px, 2.4vw, 30px);
-  color: #f3f5f7;
+  color: #F3F5F7;
   letter-spacing: 0;
   line-height: 1.2;
   margin: 0 0 8px;
@@ -232,7 +209,7 @@ section[id] {
 .miradas .mirada-texto {
   font-size: 15px;
   line-height: 1.55;
-  color: #f3f5f7;
+  color: #F3F5F7;
   opacity: 0.85;
   margin: 0;
   max-width: 46ch;
@@ -246,12 +223,12 @@ section[id] {
   width: 28px;
   height: 3px;
   border: 0;
-  background-color: #a9b4be;
+  background-color: #A9B4BE;
   opacity: 0.5;
   margin: 0 6px 0 0;
 }
 .miradas .carousel-indicators button.active {
-  background-color: #d4af6a;
+  background-color: #D4AF6A;
   opacity: 1;
 }
 
@@ -262,7 +239,7 @@ section[id] {
 }
 .areas {
   padding: 88px 0;
-  background: #f7f8fa;
+  background: #F7F8FA;
 }
 
 .areas-encabezado {
@@ -276,11 +253,8 @@ section[id] {
 
 .areas-bajada {
   margin: 0;
-  font:
-    500 17px/1.65 "Inter",
-    Helvetica,
-    sans-serif;
-  color: #86562a;
+  font: 500 17px/1.65 "Inter", Helvetica, sans-serif;
+  color: #86562A;
 }
 
 .area {
@@ -302,21 +276,21 @@ section[id] {
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: #eef1f5;
+  background: #EEF1F5;
   border: 1px solid rgba(156, 107, 62, 0.25);
 }
 .icono img {
   width: 26px;
   height: 26px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .area-titulo {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: 23px;
-  color: #0c1a2b;
+  color: #0C1A2B;
   letter-spacing: 0;
   line-height: normal;
   margin: 0;
@@ -325,7 +299,7 @@ section[id] {
 .area-texto {
   font-size: 15px;
   line-height: 1.6;
-  color: #5a6470;
+  color: #5A6470;
   margin: 8px 0 0;
 }
 
@@ -339,11 +313,8 @@ section[id] {
   border-radius: 999px;
   background: transparent;
   border: 1px solid rgba(156, 107, 62, 0.5);
-  color: #9c6b3e;
-  transition:
-    background-color 0.2s,
-    transform 0.25s,
-    color 0.2s;
+  color: #9C6B3E;
+  transition: background-color 0.2s, transform 0.25s, color 0.2s;
 }
 .btn-mas svg {
   width: 18px;
@@ -353,19 +324,18 @@ section[id] {
   stroke-width: 2;
   stroke-linecap: round;
 }
-.btn-mas:hover,
-.btn-mas:focus-visible {
+.btn-mas:hover, .btn-mas:focus-visible {
   background: rgba(212, 175, 106, 0.28);
-  color: #0c1a2b;
+  color: #0C1A2B;
 }
-.btn-mas[aria-expanded="true"] {
+.btn-mas[aria-expanded=true] {
   transform: rotate(45deg);
-  background: #9c6b3e;
+  background: #9C6B3E;
   color: #fff;
 }
 
 .estudio {
-  background: #eef1f5;
+  background: #EEF1F5;
 }
 
 .equipo {
@@ -379,7 +349,7 @@ section[id] {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .historia {
@@ -393,7 +363,7 @@ section[id] {
 .historia-texto {
   font-size: 16px;
   line-height: 1.75;
-  color: #5a6470;
+  color: #5A6470;
   margin: 24px 0 0;
   max-width: 62ch;
 }
@@ -407,10 +377,7 @@ section[id] {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(156, 107, 62, 0.3);
   border-radius: 12px;
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s,
-    background-color 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
 }
 .principio:hover {
   transform: translateY(-4px);
@@ -419,31 +386,25 @@ section[id] {
 }
 
 .estrella {
-  font:
-    400 32px/1 "Lora",
-    Helvetica,
-    serif;
-  color: #d4af6a;
+  font: 400 32px/1 "Lora", Helvetica, serif;
+  color: #D4AF6A;
 }
 
 .valor {
-  font:
-    400 clamp(18px, 2vw, 24px) "Lora",
-    Helvetica,
-    serif;
-  color: #0c1a2b;
+  font: 400 clamp(18px, 2vw, 24px) "Lora", Helvetica, serif;
+  color: #0C1A2B;
 }
 
 .confianza {
   padding: 56px 0;
-  background: #f7f8fa;
+  background: #F7F8FA;
 }
 
 .testimonio {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: 22px;
-  color: #0c1a2b;
+  color: #0C1A2B;
   letter-spacing: 0;
   line-height: 1.55;
   max-width: 680px;
@@ -459,11 +420,11 @@ section[id] {
 }
 .autor strong {
   font-size: 13px;
-  color: #16283f;
+  color: #16283F;
 }
 
 .invitacion {
-  background: #16283f;
+  background: #16283F;
   padding: 64px 0 56px;
 }
 
@@ -471,19 +432,17 @@ section[id] {
   padding: clamp(28px, 4vw, 52px);
   border-radius: 12px;
   border: 1px solid rgba(212, 175, 106, 0.45);
-  background:
-    radial-gradient(120% 140% at 100% 0%, rgba(212, 175, 106, 0.16) 0%, rgba(212, 175, 106, 0) 55%),
-    #0c1a2b;
+  background: radial-gradient(120% 140% at 100% 0%, rgba(212, 175, 106, 0.16) 0%, rgba(212, 175, 106, 0) 55%), #0C1A2B;
 }
 .panel-orientar .eyebrow .texto {
-  color: #d4af6a;
+  color: #D4AF6A;
 }
 
 .invitacion-titulo {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: clamp(30px, 4vw, 46px);
-  color: #f3f5f7;
+  color: #F3F5F7;
   letter-spacing: 0;
   line-height: 1.12;
   margin: 18px 0 10px;
@@ -492,7 +451,7 @@ section[id] {
 .invitacion-texto {
   font-size: 17px;
   line-height: 1.6;
-  color: #9aa7b4;
+  color: #9AA7B4;
   margin: 0;
 }
 
@@ -501,8 +460,7 @@ section[id] {
 }
 
 @keyframes latido {
-  0%,
-  100% {
+  0%, 100% {
     box-shadow: 0 0 0 0 rgba(212, 175, 106, 0.45);
   }
   55% {
@@ -515,7 +473,7 @@ section[id] {
   }
 }
 .pie {
-  background: #16283f;
+  background: #16283F;
   border-top: 1px solid rgba(169, 180, 190, 0.3);
 }
 
@@ -528,51 +486,45 @@ section[id] {
   height: 28px;
   border-radius: 4px;
   border: 1px solid rgba(169, 180, 190, 0.4);
-  background: url("../img/image.jpg") 50% 50% / cover;
+  background: url("../img/image.jpg") 50% 50%/cover;
 }
 
 .nombre-footer {
-  font:
-    700 18px "Lora",
-    Helvetica,
-    serif;
-  color: #f3f5f7;
+  font: 700 18px "Lora", Helvetica, serif;
+  color: #F3F5F7;
 }
 
 .lema {
   font-size: 13px;
-  color: #9aa7b4;
+  color: #9AA7B4;
   margin: 6px 0 0;
 }
 
 .dato-titulo {
-  font:
-    700 11px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 11px "Inter", Helvetica, sans-serif;
   letter-spacing: 0.15px;
-  color: #d4af6a;
+  color: #D4AF6A;
   margin: 0 0 4px;
 }
 
 .dato {
   font-size: 14px;
   line-height: 1.5;
-  color: #f3f5f7;
+  color: #F3F5F7;
   margin: 0;
 }
 .dato a {
   color: inherit;
 }
 .dato a:hover {
-  color: #d4af6a;
+  color: #D4AF6A;
 }
 
 .legales {
-  background: #0c1a2b;
+  background: #0C1A2B;
   padding: 10px 0;
   font-size: 11px;
-  color: #9aa7b4;
+  color: #9AA7B4;
 }
 
 .modal-prisma {
@@ -581,7 +533,7 @@ section[id] {
   overflow: hidden;
 }
 .modal-prisma .modal-header {
-  background: #16283f;
+  background: #16283F;
   border-bottom: 1px solid rgba(212, 175, 106, 0.3);
   align-items: flex-start;
 }
@@ -589,37 +541,30 @@ section[id] {
   font-family: "Lora", Helvetica, serif;
   font-weight: 400;
   font-size: 28px;
-  color: #f3f5f7;
+  color: #F3F5F7;
   letter-spacing: 0;
   line-height: normal;
 }
 .modal-prisma .modal-eyebrow {
-  font:
-    700 11px "Inter",
-    Helvetica,
-    sans-serif;
+  font: 700 11px "Inter", Helvetica, sans-serif;
   letter-spacing: 0.2px;
-  color: #d4af6a;
+  color: #D4AF6A;
   margin: 0 0 4px;
 }
 .modal-prisma .modal-body {
-  background: #f7f8fa;
+  background: #F7F8FA;
   padding: 24px;
 }
 .modal-prisma .form-label {
-  font:
-    700 13px "Inter",
-    Helvetica,
-    sans-serif;
-  color: #0c1a2b;
+  font: 700 13px "Inter", Helvetica, sans-serif;
+  color: #0C1A2B;
 }
 .modal-prisma .opcional {
   font-weight: 400;
-  color: #5a6470;
+  color: #5A6470;
 }
-.modal-prisma .form-control:focus,
-.modal-prisma .form-select:focus {
-  border-color: #9c6b3e;
+.modal-prisma .form-control:focus, .modal-prisma .form-select:focus {
+  border-color: #9C6B3E;
   box-shadow: 0 0 0 0.2rem rgba(212, 175, 106, 0.3);
 }
 .modal-prisma .nota-form {
@@ -645,7 +590,7 @@ section[id] {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #f3f5f7;
+  background-color: #F3F5F7;
   border-radius: 2px;
 }
 
@@ -690,7 +635,7 @@ section[id] {
     justify-content: center;
     gap: 24px;
     padding: 40px;
-    background-color: #16283f;
+    background-color: #16283F;
     z-index: 100;
   }
   .sitio-de-estudio .navbar.active {

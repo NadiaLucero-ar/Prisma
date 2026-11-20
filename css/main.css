@@ -97,6 +97,7 @@ section[id] {
 .navegacion .estudio {
   font: 700 20px "Lora", Helvetica, serif;
   color: #F3F5F7;
+  background: transparent !important;
 }
 .navegacion .descriptor {
   font: 400 10px "Inter", Helvetica, sans-serif;
