@@ -1,90 +1,25 @@
-@use "variables" as *;
-@use "mixins" as *;
+@use 'variables' as *;
+@use 'mixins' as *;
 
-.sitio-de-estudio {
-  .portada {
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
-    height: 860px;
-    align-items: flex-start;
-    position: relative;
-    background-color: $color-azul;
-  }
+.portada { background: $color-azul; padding: 56px 0; .eyebrow .texto { color: $color-text-onDark; } }
+.presentacion { display: flex; flex-direction: column; gap: 28px; }
+.titulo { @include titulo-serif(clamp(40px, 5.2vw, 68px), $color-text-onDark, -1.2px, 1.04); margin: 0; }
+.introduccion { max-width: 520px; font-size: 19px; line-height: 1.6; color: $color-text-onDark-muted; margin: 0; }
 
-  .contenido-principal {
-    display: flex;
-    align-items: flex-start;
-    gap: 64px;
-    padding: 54px 0 0 80px;
-    flex: 1;
-    width: 100%;
-  }
-
-  .presentacin {
-    display: flex;
-    flex-direction: column;
-    width: 620px;
-    align-items: flex-start;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .div {
-    @include eyebrow;
-  }
-
-  .texto {
-    margin-top: -1px;
-    font-family: $font-sans;
-    font-weight: 700;
-    color: $color-text-onDark;
-    font-size: 13px;
-    letter-spacing: 0.2px;
-  }
-
-  .t-tulo {
-    align-self: stretch;
-    @include titulo-serif(56px, $color-text-onDark, 0, 62px); // antes: 68px, -1.22px, 70px
-  }
-
-  .introducci-n {
-    width: 520px;
-    font-family: $font-sans;
-    font-weight: 400;
-    color: $color-text-onDark-muted;
-    font-size: 20px;
-    line-height: 31px;
-  }
-
-  .botn-2 {
-    @include boton;
-    border: 1px solid rgba($color-plata, 0.3);
-  }
-
-  // Tratamiento tipo Uría Menéndez: foto de fondo (biblioteca jurídica / mapamundi)
-  // + degradé propio en modo "multiply" para que la imagen se sienta parte de la marca.
-  // Reemplazá la url de abajo por tu propia foto cuando la tengas.
-  .retrato {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    background-image:
-      linear-gradient(180deg, rgba(15, 28, 48, 0.88) 0%, rgba(160, 98, 74, 0.35) 100%),
-      url("../img/retrato-institucional.jpg"); // ← acá, cambiá .png por .jpg
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .velo {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(26, 43, 74, 0.8) 0%, rgba(26, 43, 74, 0) 60%);
-  }
+// Carrusel principal: foto de portada con la mirada de turno sobre un degradé azul
+.miradas {
+  position: relative; border-radius: $radius-md; overflow: hidden; border: 1px solid rgba($color-oro, .3);
+  .slide-img { display: block; width: 100%; height: 440px; object-fit: cover; }
+  .zoom-a { transform: scale(1.8); transform-origin: 12% 42%; }
+  .zoom-b { transform: scale(1.7); transform-origin: 74% 58%; }
+  .carousel-item::after { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(12,26,43,.15) 30%, rgba(12,26,43,.92) 100%); }
+  .mirada { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; padding: 0 28px 56px; }
+  .mirada-etiqueta { font: 700 12px $font-sans; letter-spacing: .2px; color: $color-oro; margin: 0 0 8px; }
+  .mirada-titulo { @include titulo-serif(clamp(22px, 2.4vw, 30px), $color-text-onDark, 0, 1.2); margin: 0 0 8px; }
+  .mirada-texto { font-size: 15px; line-height: 1.55; color: $color-text-onDark; opacity: .85; margin: 0; max-width: 46ch; }
+  .carousel-indicators { z-index: 3; justify-content: flex-start; margin: 0 0 22px 28px;
+    button { width: 28px; height: 3px; border: 0; background-color: $color-plata; opacity: .5; margin: 0 6px 0 0;
+      &.active { background-color: $color-oro; opacity: 1; } } }
 }
+@media (min-width: 992px) { .miradas .slide-img { height: 560px; } }

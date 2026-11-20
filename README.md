@@ -3,7 +3,7 @@
 ## Estructura del proyecto
 
 ```
-nova-landing/
+prisma-landing/
 ├── index.html
 ├── globals.css          ← reset + reglas globales (sin Sass)
 ├── css/
@@ -19,6 +19,8 @@ nova-landing/
 │   ├── _confianza.scss
 │   ├── _contacto.scss
 │   └── main.scss        ← punto de entrada, solo @use de partials
+├── js/
+│   └── main.js          ← validación del formulario y envío (mailto)
 └── img/                 ← poné acá tus fotos y SVG del boceto
 ```
 
@@ -27,7 +29,6 @@ nova-landing/
 ## Cómo compilar en VS Code
 
 **Opción A — extensión "Live Sass Compiler" (más simple, un clic):**
-
 1. Instalá la extensión "Live Sass Compiler" de Glenn Marks en VS Code.
 2. Abrí este proyecto en VS Code.
 3. Click en "Watch Sass" abajo a la derecha en la barra de estado.
@@ -36,7 +37,6 @@ nova-landing/
 Si la extensión pregunta dónde guardar el output, apuntala a `css/style.css` (podés configurarlo en `.vscode/settings.json` con la clave `liveSassCompile.settings.formats`).
 
 **Opción B — línea de comandos:**
-
 ```bash
 npm install -g sass
 sass scss/main.scss css/style.css --watch
@@ -49,4 +49,5 @@ sass scss/main.scss css/style.css --watch
 - [ ] Se sacó la tarjeta de "Derecho Privado" (civil/consumidor) de la grilla de 6 a 5 áreas, siguiendo la propuesta de "Prisma" que arme. 
 - [ ] Media queries para mobile/tablet (el layout está pensado a 1440px fijo, como el boceto de Figma).
 
-# Diseño - Boceto interactivo en Figma: [ver aquí] https://www.figma.com/design/T0SufoVwuoPgtjxpf3GRJo/Prisma?node-id=2-453&m=dev&t=LdKSwXPQVjU76WXN-1 - Capturas del boceto: ver carpeta `design/` - Sitio publicado: https://nadialucero-ar.github.io/Prisma/
+- [ ] **Formulario de consulta**: hoy arma un correo (mailto) a `EMAIL_DESTINO` en `js/main.js`. Cuando esté la API (`prisma-api`), reemplazar por un `fetch` POST.
+- [x] Bootstrap 5.3 por CDN (navbar, carrusel, collapse, modal y formulario); layout responsive.

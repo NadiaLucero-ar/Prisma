@@ -1,95 +1,23 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.sitio-de-estudio {
-  .el-estudio {
-    display: flex;
-    width: 1440px;
-    height: 680px;
-    align-items: flex-start;
-    background-color: $color-bg-alt;
-  }
+.estudio { background: $color-bg-alt; }
+.equipo { min-height: 360px; position: relative; }
+// La foto llena toda la columna (cover): sin huecos y sin deformarse
+.fotografa { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
-  .equipo {
-    display: flex;
-    flex-direction: column;
-    width: 650px;
-    align-items: flex-start;
-    padding: 76px 0 76px 80px;
-    align-self: stretch;
-  }
-
-  .fotografa {
-    flex: 1;
-    align-self: stretch;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .historia {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    padding: 94px 76px;
-    flex: 1;
-    align-self: stretch;
-  }
-
-  .t-tulo-4 {
-    align-self: stretch;
-    @include titulo-serif(44px, $color-azul-noche, 0, 48.4px);
-  }
-
-  .descripci-n-2 {
-    align-self: stretch;
-    color: $color-text-body;
-    line-height: 27.2px;
-    font-family: $font-sans;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .principios {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .principio {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    flex: 1;
-  }
-
-  .n-mero {
-    margin-top: -1px;
-    font-family: $font-serif;
-    font-weight: 400;
-    color: $color-bronce;
-    font-size: 18px;
-  }
-
-  .valor {
-    font-family: $font-sans;
-    font-weight: 700;
-    color: $color-azul-noche;
-    font-size: 14px;
-  }
-
-  .botn-3 {
-    @include boton($color-bg-alt, $color-azul-noche);
-    border: 1px solid rgba($color-bronce, 0.3);
-  }
-
-  .etiqueta-2 {
-    font-family: $font-sans;
-    font-weight: 700;
-    color: $color-azul-noche;
-    font-size: 13px;
-    letter-spacing: 0.1px;
-  }
+.historia {
+  display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
+  padding: 72px clamp(24px, 5vw, 80px);
 }
+.historia-texto { font-size: 16px; line-height: 1.75; color: $color-text-body; margin: 24px 0 0; max-width: 62ch; }
+
+// Principios más abajo y más grandes: llenan el espacio con un detalle elegante
+.principio {
+  display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 22px 8px;
+  background: rgba(255,255,255,.7); border: 1px solid rgba($color-bronce, .3); border-radius: $radius-md;
+  transition: transform .25s, box-shadow .25s, background-color .25s;
+  &:hover { transform: translateY(-4px); box-shadow: $shadow-card; background: #fff; }
+}
+.estrella { font: 400 32px/1 $font-serif; color: $color-oro; }
+.valor { font: 400 clamp(18px, 2vw, 24px) $font-serif; color: $color-azul-noche; }

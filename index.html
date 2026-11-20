@@ -1,302 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Prisma • Abogacía Boutique</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="sitio-de-estudio">
-      <div class="portada" id="Inicio">
-        <div class="navegacin">
-          <div class="marca">
-            <div class="logo-prisma"></div>
-            <div class="nombre">
-              <div class="estudio">PRISMA</div>
-              <div class="descriptor">ABOGACÍA BOUTIQUE</div>
-            </div>
-          </div>
-          <div class="navbar">
-            <a class="enlace" href="#inicio">Inicio</a>
-            <a class="enlace" href="#la-perspectiva-prisma">La Perspectiva Prisma</a>
-            <a class="enlace" href="#areas-especialidad">Áreas de Especialidad</a>
-            <a class="enlace" href="#consultas-corporativas">Consultas Corporativas</a>
-            <a class="botn" href="#consultas-corporativas">
-              <div class="etiqueta">AGENDAR CONSULTA</div>
-              <div class="arrow-right"><img class="vector" src="img/vector-7.svg" /></div>
-            </a>
-          </div>
-          <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-        <div class="contenido-principal">
-          <div class="presentacin">
-            <div class="div">
-              <div class="acento"></div>
-              <div class="texto">PROTECCIÓN DE LEGADOS, EMPRESAS E INNOVACIÓN</div>
-            </div>
-            <p class="t-tulo">Su desafío, visto desde cada ángulo.</p>
-            <p class="introducci-n">
-              Estudio juridico de sus propuestas desde múltiples perspectivas para brindar
-              soluciones integrales en Derecho Corporativo y Planificación Patrimonial en La Pampa.
-            </p>
-            <a class="botn-2" href="#consultas-corporativas">
-              <div class="etiqueta">AGENDAR CONSULTA</div>
-              <div class="arrow-right"><img class="vector" src="img/vector-4.svg" /></div>
-            </a>
-          </div>
-          <div class="retrato"><div class="velo"></div></div>
-        </div>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prisma • Abogacía Boutique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+<!-- Bootstrap 5.3 va ANTES de nuestros estilos para que style.css pueda sobrescribirlo -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-root-margin="-90px 0px -60% 0px" tabindex="0">
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+    <div class="container-xxl px-lg-5">
+      <a class="navbar-brand marca" href="#inicio">
+        <span class="logo-prisma"></span>
+        <span class="nombre"><span class="estudio">PRISMA</span><span class="descriptor">ABOGACÍA BOUTIQUE</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#perspectiva">La Perspectiva Prisma</a></li>
+          <li class="nav-item"><a class="nav-link" href="#areas">Áreas de Especialidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#consultas-corporativas">Consultas Corporativas</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button type="button" class="btn btn-prisma" data-bs-toggle="modal" data-bs-target="#modalConsulta">AGENDAR CONSULTA</button>
+          </li>
+        </ul>
       </div>
-      <div class="reas-de-prctica" id="areas-especialidad">
-        <div class="encabezado">
-          <div class="ttulo-de-seccin">
-            <div class="div">
-              <div class="acento"></div>
-              <div class="text-wrapper">ÁREAS DE ESPECIALIDAD</div>
-            </div>
-            <div class="t-tulo-2">Cada arista, una solución precisa.</div>
-          </div>
-          <p class="p">
-            Se combina rigor técnico y visión estratégica para anticipar riesgos y abrir caminos
-            posibles, con representación en controversias complejas y negociaciones sensibles.
-          </p>
-        </div>
-        <div class="servicios">
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2"><img class="img" src="img/vector-2.svg" /></div>
-            </div>
-            <div class="t-tulo-3">Asesoramiento Corporativo</div>
-            <p class="descripci-n">
-              Diseño de estructuras societarias, auditorías de contratos comerciales y decisiones de
-              negocio estratégicas con un respaldo legal preventivo y riguroso.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2"><img class="vector-2" src="img/vector-6.svg" /></div>
-            </div>
-            <div class="t-tulo-3">Propiedad Industrial</div>
-            <p class="descripci-n">
-              Gestión estratégica e inscripción de marcas, patentes de invención, modelos de
-              utilidad y diseños industriales ante el INPI, junto con contratos de transferencia de
-              tecnología.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2"><img class="img" src="img/vector-5.svg" /></div>
-            </div>
-            <div class="t-tulo-3">Derechos de Autor</div>
-            <p class="descripci-n">
-              Protección integral de obras artísticas, literarias y composiciones musicales,
-              resguardo legal de marcas de creadores y registro de código fuente de software.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-        </div>
-        <div class="servicios">
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2">
-                <div class="shield"><img class="vector-4" src="img/vector-8.svg" /></div>
-              </div>
-            </div>
-            <div class="t-tulo-3">Sucesiones y Patrimonio</div>
-            <p class="descripci-n">
-              Tramitación ágil de procesos sucesorios y consultoría en planificación hereditaria
-              para salvaguardar el legado familiar y dar continuidad a las unidades de negocio.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2"><img class="vector-2" src="img/vector.svg" /></div>
-            </div>
-            <div class="t-tulo-3">Derecho Privado</div>
-            <p class="descripci-n">
-              Representación en casos civiles, por daños, perjuicios o afectaciones al derecho de
-              los usuarios y consumidores.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-          <div class="rea">
-            <div class="cono">
-              <div class="div-2"><img class="vector-3" src="img/vector-9.svg" /></div>
-            </div>
-            <div class="t-tulo-3">Riesgos Corporativos y ART</div>
-            <p class="descripci-n">
-              Cumplimiento preventivo de normativas ambientales para empresas, gestión técnica
-              frente a Aseguradoras de Riesgos del Trabajo (ART) y mitigación de siniestros
-              laborales.
-            </p>
-            <div class="enlace-2">CONOCER MÁS →</div>
-          </div>
-        </div>
-      </div>
-      <div class="el-estudio" id="la-perspectiva-prisma">
-        <div class="equipo"><img class="fotografa" src="img/fotograf-a.png" /></div>
-        <div class="historia">
-          <div class="div">
-            <div class="acento"></div>
-            <div class="text-wrapper">NUESTRA FILOSOFÍA</div>
-          </div>
-          <p class="t-tulo-4">La Perspectiva Prisma.</p>
-          <p class="descripci-n-2">
-            Detrás de Prisma • Abogacía Boutique está la conducción de la Dra. Nadia Lorena Lucero
-            Villar. Partimos de una premisa simple: los desafíos de una empresa, un inventor o una
-            familia no son lineales — requieren mirarse desde múltiples ángulos. Igual que un prisma
-            descompone la luz, combinamos estrategia corporativa, prevención de riesgos y respeto
-            por el valor de las ideas en cada caso que tomamos.
-          </p>
-          <div class="principios">
-            <div class="principio">
-              <div class="n-mero">✦</div>
-              <div class="valor">Claridad</div>
-            </div>
-            <div class="principio">
-              <div class="n-mero">✦</div>
-              <div class="valor">Cercanía</div>
-            </div>
-            <div class="principio">
-              <div class="n-mero">✦</div>
-              <div class="valor">Estrategia</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- =================================================================
-           SECCIÓN: LA VOZ DE NUESTROS CLIENTES (TESTIMONIOS)
-           ================================================================= -->
-      <div class="testimonios" id="testimonios">
-        <div class="sitio-de-estudio">
-          <div class="subttulo-seccion">
-            <div class="acento-rojo"></div>
-            <div class="texto-acento">LA VOZ DE NUESTROS CLIENTES</div>
-          </div>
-
-          <blockquote class="cita-cliente">
-            “Encontramos un equipo que hizo simple lo complejo. Su criterio y serenidad fueron
-            determinantes para alcanzar un acuerdo que protegió a nuestra empresa.”
-          </blockquote>
-
-          <div class="autor-cita">
-            <div class="nombre-autor">MARTÍN FERRARO</div>
-            <div class="cargo-autor">Director, Grupo Andino</div>
-          </div>
-
-          <div class="menciones-reconocimientos">
-            <span>CHAMBERS LATIN AMERICA</span>
-            <span>BEST LAWYERS ARGENTINA</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- =================================================================
-           SECCIÓN: CONTACTO & FOOTER GENERAL
-           ================================================================= -->
-      <div class="seccion-contacto-footer" id="consultas-corporativas">
-        <!-- Bloque Superior: Llamado a la Acción -->
-        <div class="contacto-call-to-action">
-          <div class="contacto-izquierda">
-            <div class="subttulo-seccion-claro">
-              <div class="acento-rojo"></div>
-              <div class="texto-acento-claro">ESTAMOS PARA ORIENTARLO</div>
-            </div>
-            <h2 class="titulo-contacto">Conversemos sobre su próximo paso.</h2>
-            <p class="bajada-contacto">
-              Una primera conversación confidencial puede aportar la claridad que necesita.
-            </p>
-          </div>
-
-          <div class="contacto-derecha">
-            <a href="mailto:estudiojuridiconova@gmail.com" class="boton-solicitar">
-              SOLICITAR UNA CONSULTA ➔
-            </a>
-          </div>
-        </div>
-        <hr class="divisor-footer" />
-        <!-- Bloque Medio: Datos del Estudio -->
-        <footer class="footer-principal">
-          <div class="columna-marca">
-            <div class="logo-prisma-footer">
-              <img src="img/image.jpg" alt="Logo Prisma" class="img-logo-footer" />
-              <span>PRISMA</span>
-            </div>
-            <p class="eslogan-footer">
-              Asesoramiento legal con rigor, criterio y compromiso personal.
-            </p>
-          </div>
-          <div class="columnas-info">
-            <div class="columna-info-bloque">
-              <h3>OFICINA</h3>
-              <p>Santa Rosa, La Pampa</p>
-            </div>
-
-            <div class="columna-info-bloque">
-              <h3>CONTACTO</h3>
-              <p><a href="tel:+541143287400">+54 11 4328 7400</a></p>
-              <p>
-                <a href="mailto:estudiojuridiconova@gmail.com">estudiojuridiconova@gmail.com</a>
-              </p>
-            </div>
-
-            <div class="columna-info-bloque">
-              <h3>SEGUINOS</h3>
-              <p>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link-linkedin"
-                >
-                  <img src="img/vector-3.svg" alt="Icono LinkedIn" />
-                  LinkedIn
-                </a>
-              </p>
-            </div>
-          </div>
-        </footer>
-        <!-- Bloque Inferior: Legales -->
-        <div class="footer-legales">
-          <p class="copyright">&copy; 2026 NOVA. Todos los derechos reservados.</p>
-          <div class="links-legales">
-            <a href="#privacidad">Privacidad</a>
-            <a href="#terminos">Términos</a>
-          </div>
-        </div>
-      </div>
-      <!-- Cierre de seccion-contacto-footer -->
     </div>
-    <!-- Cierre de sitio-de-estudio -->
-    <script>
-      // Seleccionamos el botón de la hamburguesa y la barra de navegación
-      const botonHamburguesa = document.querySelector(".hamburguesa");
-      const navBar = document.querySelector(".navbar");
+  </nav>
+</header>
 
-      botonHamburguesa.addEventListener("click", () => {
-        // Intercambia la clase "active" en la barra de navegación
-        navBar.classList.toggle("active");
+<main>
+<!-- ============ PORTADA ============ -->
+<section id="inicio" class="portada">
+  <div class="container-xxl px-lg-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 presentacion">
+        <div class="eyebrow"><span class="acento"></span><span class="texto">PROTECCIÓN DE LEGADOS, EMPRESAS E INNOVACIÓN</span></div>
+        <h1 class="titulo">Su desafío, visto desde cada ángulo.</h1>
+        <p class="introduccion">Analizamos sus desafíos jurídicos desde múltiples perspectivas para brindar soluciones integrales en Derecho Corporativo y Planificación Patrimonial en La Pampa.</p>
 
-        // Cambia el estado de accesibilidad (true/false)
-        const estaExpandido = botonHamburguesa.getAttribute("aria-expanded") === "true";
-        botonHamburguesa.setAttribute("aria-expanded", !estaExpandido);
+      </div>
+      <div class="col-lg-6">
+        <!-- Carrusel principal: las miradas de Prisma sobre la imagen de portada -->
+        <div id="miradas" class="carousel slide carousel-fade miradas" data-bs-ride="carousel" data-bs-interval="5500" aria-label="Las miradas de Prisma">
+          <div class="carousel-inner">
+          <div class="carousel-item active"><img src="img/retrato-institucional.jpg" class="slide-img " alt=""><div class="mirada"><p class="mirada-etiqueta">Mirada corporativa</p><p class="mirada-titulo">Estructuras que sostienen el negocio.</p><p class="mirada-texto">Sociedades, contratos y decisiones estratégicas con respaldo legal preventivo.</p></div></div>
+          <div class="carousel-item"><img src="img/fotografia.jpg" class="slide-img " alt=""><div class="mirada"><p class="mirada-etiqueta">Mirada patrimonial</p><p class="mirada-titulo">Legados que se transmiten sin conflicto.</p><p class="mirada-texto">Sucesiones y planificación hereditaria para dar continuidad a la familia y a la empresa.</p></div></div>
+          <div class="carousel-item"><img src="img/retrato-institucional.jpg" class="slide-img zoom-a" alt=""><div class="mirada"><p class="mirada-etiqueta">Mirada de la innovación</p><p class="mirada-titulo">Ideas protegidas desde el primer día.</p><p class="mirada-texto">Marcas, patentes y derechos de autor registrados ante los organismos competentes.</p></div></div>
+          <div class="carousel-item"><img src="img/retrato-institucional.jpg" class="slide-img zoom-b" alt=""><div class="mirada"><p class="mirada-etiqueta">Mirada preventiva</p><p class="mirada-titulo">Riesgos resueltos antes de que existan.</p><p class="mirada-texto">Cumplimiento normativo y gestión técnica frente a ART y siniestros laborales.</p></div></div>
+          </div>
+          <div class="carousel-indicators"><button type="button" data-bs-target="#miradas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mirada 1"></button><button type="button" data-bs-target="#miradas" data-bs-slide-to="1" aria-label="Mirada 2"></button><button type="button" data-bs-target="#miradas" data-bs-slide-to="2" aria-label="Mirada 3"></button><button type="button" data-bs-target="#miradas" data-bs-slide-to="3" aria-label="Mirada 4"></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Opcional: Si querés animar las tres rayitas del botón a una "X"
-        botonHamburguesa.classList.toggle("open");
-      });
-    </script>
-  </body>
+<!-- ============ ÁREAS DE ESPECIALIDAD ============ -->
+<section id="areas" class="areas">
+  <div class="container-xxl px-lg-5">
+    <header class="areas-encabezado text-center">
+      <div class="eyebrow justify-content-center"><span class="acento"></span><span class="texto">ÁREAS DE ESPECIALIDAD</span></div>
+      <h2 class="titulo-seccion">Cada arista, una solución precisa.</h2>
+      <p class="areas-bajada">Combinamos rigor técnico y visión estratégica para anticipar riesgos y abrir caminos posibles, con representación en controversias complejas y negociaciones sensibles.</p>
+    </header>
+
+    <div class="row g-4 justify-content-center align-items-start">
+      <article class="col-md-6 col-lg-4"><div class="area">
+        <span class="icono"><img src="img/vector-2.svg" alt=""></span>
+        <h3 class="area-titulo">Asesoramiento Corporativo</h3>
+        <button class="btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#area1" aria-expanded="false" aria-controls="area1" aria-label="Ver detalle de Asesoramiento Corporativo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="collapse" id="area1"><p class="area-texto">Diseño de estructuras societarias, auditorías de contratos comerciales y decisiones de negocio estratégicas con un respaldo legal preventivo y riguroso.</p></div>
+      </div></article>
+      <article class="col-md-6 col-lg-4"><div class="area">
+        <span class="icono"><img src="img/vector-6.svg" alt=""></span>
+        <h3 class="area-titulo">Propiedad Industrial</h3>
+        <button class="btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#area2" aria-expanded="false" aria-controls="area2" aria-label="Ver detalle de Propiedad Industrial"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="collapse" id="area2"><p class="area-texto">Gestión estratégica e inscripción de marcas, patentes de invención, modelos de utilidad y diseños industriales ante el INPI, junto con contratos de transferencia de tecnología.</p></div>
+      </div></article>
+      <article class="col-md-6 col-lg-4"><div class="area">
+        <span class="icono"><img src="img/vector-5.svg" alt=""></span>
+        <h3 class="area-titulo">Derechos de Autor</h3>
+        <button class="btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#area3" aria-expanded="false" aria-controls="area3" aria-label="Ver detalle de Derechos de Autor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="collapse" id="area3"><p class="area-texto">Protección integral de obras artísticas, literarias y composiciones musicales, resguardo legal de marcas de creadores y registro de código fuente de software.</p></div>
+      </div></article>
+      <article class="col-md-6 col-lg-4"><div class="area">
+        <span class="icono"><img src="img/vector-8.svg" alt=""></span>
+        <h3 class="area-titulo">Sucesiones y Patrimonio</h3>
+        <button class="btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#area4" aria-expanded="false" aria-controls="area4" aria-label="Ver detalle de Sucesiones y Patrimonio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="collapse" id="area4"><p class="area-texto">Tramitación ágil de procesos sucesorios y consultoría en planificación hereditaria para salvaguardar el legado familiar y dar continuidad a las unidades de negocio.</p></div>
+      </div></article>
+      <article class="col-md-6 col-lg-4"><div class="area">
+        <span class="icono"><img src="img/vector-9.svg" alt=""></span>
+        <h3 class="area-titulo">Riesgos Corporativos y ART</h3>
+        <button class="btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#area5" aria-expanded="false" aria-controls="area5" aria-label="Ver detalle de Riesgos Corporativos y ART"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="collapse" id="area5"><p class="area-texto">Cumplimiento preventivo de normativas ambientales para empresas, gestión técnica frente a Aseguradoras de Riesgos del Trabajo (ART) y mitigación de siniestros laborales.</p></div>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA PERSPECTIVA PRISMA ============ -->
+<section id="perspectiva" class="estudio">
+  <div class="row g-0">
+    <div class="col-lg-5 equipo"><img class="fotografa" src="img/fotografia.jpg" alt="Dra. Nadia Lorena Lucero Villar"></div>
+    <div class="col-lg-7 historia">
+      <div>
+        <div class="eyebrow"><span class="acento"></span><span class="texto">NUESTRA FILOSOFÍA</span></div>
+        <h2 class="titulo-seccion mt-3">La Perspectiva Prisma.</h2>
+        <p class="historia-texto">Detrás de Prisma • Abogacía Boutique está la conducción de la Dra. Nadia Lorena Lucero Villar. Partimos de una premisa simple: los desafíos de una empresa, un inventor o una familia no son lineales — requieren mirarse desde múltiples ángulos. Igual que un prisma descompone la luz, combinamos estrategia corporativa, prevención de riesgos y respeto por el valor de las ideas en cada caso que tomamos.</p>
+      </div>
+      <div class="principios row g-3">
+        <div class="col-4"><div class="principio"><span class="estrella">✦</span><span class="valor">Claridad</span></div></div>
+        <div class="col-4"><div class="principio"><span class="estrella">✦</span><span class="valor">Cercanía</span></div></div>
+        <div class="col-4"><div class="principio"><span class="estrella">✦</span><span class="valor">Estrategia</span></div></div>
+      </div>
+      <div><a class="btn btn-prisma-claro" href="#consultas-corporativas">CONOCEME</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIO ============ -->
+<section class="confianza">
+  <div class="container text-center">
+    <div class="eyebrow justify-content-center"><span class="acento"></span><span class="texto">LA VOZ DE NUESTROS CLIENTES</span></div>
+    <blockquote class="testimonio">"Encontramos un equipo que hizo simple lo complejo. Su criterio y serenidad fueron determinantes para alcanzar un acuerdo que protegió a nuestra empresa."</blockquote>
+    <p class="autor"><strong>MARTÍN FERRARO</strong><span>Director, Grupo Andino</span></p>
+  </div>
+</section>
+
+<!-- ============ CONSULTAS + FOOTER ============ -->
+<section id="consultas-corporativas" class="invitacion">
+  <div class="container-xxl px-lg-5">
+    <div class="panel-orientar">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="eyebrow"><span class="acento"></span><span class="texto">ESTAMOS PARA ORIENTARLO</span></div>
+          <h2 class="invitacion-titulo">Conversemos sobre su próximo paso.</h2>
+          <p class="invitacion-texto">Una primera conversación confidencial puede aportar la claridad que necesita.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <button type="button" class="btn btn-prisma btn-latido" data-bs-toggle="modal" data-bs-target="#modalConsulta">SOLICITAR UNA CONSULTA ➔</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="container-xxl px-lg-5">
+    <div class="row align-items-center gy-3 pie-info">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2"><span class="logo-prisma-footer"></span><span class="nombre-footer">PRISMA</span></div>
+        <p class="lema">Protección de Legados, Empresas e Innovación.</p>
+      </div>
+      <div class="col-lg-8"><div class="row gy-3 datos">
+        <div class="col-sm-4"><p class="dato-titulo">OFICINA</p><p class="dato">Santa Rosa, La Pampa</p></div>
+        <div class="col-sm-5"><p class="dato-titulo">CONTACTO</p><p class="dato"><a href="tel:+542954854636">02954 854636</a><br><a href="https://www.prisma-abogaciaboutique.com.ar" target="_blank" rel="noopener">www.prisma-abogaciaboutique.com.ar</a></p></div>
+        <div class="col-sm-3"><p class="dato-titulo">SEGUINOS</p><p class="dato"><a href="#" aria-label="LinkedIn de Prisma">LinkedIn</a></p></div>
+      </div></div>
+    </div>
+  </div>
+  <div class="legales"><div class="container-xxl px-lg-5 d-flex flex-wrap justify-content-between gap-2">
+    <span>© 2026 Nadia Lorena Lucero Villar. Todos los derechos reservados.</span><span>Privacidad&nbsp;&nbsp;·&nbsp;&nbsp;Términos</span>
+  </div></div>
+</footer>
+
+<!-- ============ MODAL: AGENDAR CONSULTA ============ -->
+<div class="modal fade" id="modalConsulta" tabindex="-1" aria-labelledby="tituloConsulta" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content modal-prisma">
+      <div class="modal-header">
+        <div><p class="modal-eyebrow">PRISMA • ABOGACÍA BOUTIQUE</p><h2 class="modal-title" id="tituloConsulta">Agendar consulta</h2></div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <form id="formConsulta" class="modal-body" novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6"><label for="fNombre" class="form-label">Nombre y apellido</label><input type="text" class="form-control" id="fNombre" name="nombre" required autocomplete="name"><div class="invalid-feedback">Indíquenos su nombre.</div></div>
+          <div class="col-sm-6"><label for="fTel" class="form-label">Teléfono</label><input type="tel" class="form-control" id="fTel" name="telefono" required autocomplete="tel" pattern="[0-9+\s()\-]{8,}"><div class="invalid-feedback">Ingrese un teléfono válido.</div></div>
+          <div class="col-12"><label for="fMail" class="form-label">Correo electrónico</label><input type="email" class="form-control" id="fMail" name="email" required autocomplete="email"><div class="invalid-feedback">Ingrese un correo válido.</div></div>
+          <div class="col-12">
+            <label for="fMateria" class="form-label">Materia o tipo de reclamo <span class="opcional">(opcional)</span></label>
+            <select class="form-select" id="fMateria" name="materia">
+              <option value="" selected>No estoy seguro/a — necesito orientación</option>
+              <optgroup label="Materias">
+                <option>Asesoramiento Corporativo</option><option>Propiedad Industrial (marcas, patentes)</option><option>Derechos de Autor</option><option>Sucesiones y Patrimonio</option><option>Riesgos Corporativos y ART</option>
+              </optgroup>
+              <optgroup label="Tipos de reclamo o trámite">
+                <option>Constitución o conflicto societario</option><option>Contratos y cobro de deudas</option><option>Registro de marca u obra</option><option>Sucesión o herencia</option><option>Accidente laboral / reclamo a ART</option><option>Otro</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-12"><label for="fMotivo" class="form-label">Cuéntenos brevemente de qué se trata</label><textarea class="form-control" id="fMotivo" name="motivo" rows="3" maxlength="500" required></textarea><div class="invalid-feedback">Una breve descripción nos ayuda a prepararnos.</div></div>
+          <div class="col-sm-6"><label for="fFecha" class="form-label">Fecha de la entrevista</label><input type="date" class="form-control" id="fFecha" name="fecha" required><div class="invalid-feedback">Elija una fecha.</div></div>
+          <div class="col-sm-6"><label for="fHora" class="form-label">Franja horaria</label><select class="form-select" id="fHora" name="franja"><option>Mañana</option><option>Tarde</option></select></div>
+        </div>
+        <button type="submit" class="btn btn-prisma w-100 mt-4">ENVIAR SOLICITUD</button>
+        <p class="nota-form">Su consulta es confidencial. Le confirmaremos el día y horario por teléfono o correo.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

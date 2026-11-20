@@ -1,13 +1,20 @@
-@use "variables" as *;
+@use 'variables' as *;
+@use 'mixins' as *;
 
-.sitio-de-estudio {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  background-color: $color-bg;
+body { font-family: $font-sans; background: $color-bg; color: $color-text-body; }
+section[id] { scroll-margin-top: 92px; }
+
+.eyebrow { @include eyebrow; .texto { font: 700 13px/1 $font-sans; letter-spacing: .2px; color: $color-azul; } }
+.titulo-seccion { @include titulo-serif(clamp(30px, 4vw, 44px), $color-azul-noche, 0, 1.1); }
+
+.btn-prisma {
+  @include boton;
+  height: 48px; justify-content: center; font: 700 13px $font-sans; letter-spacing: .1px;
+  border: 1px solid rgba($color-plata, .3);
+  &:hover, &:focus-visible { background-color: #865A32; color: $color-text-onDark; }
 }
-
-html {
-  scroll-behavior: smooth;
+.btn-prisma-claro {
+  @include boton($color-bg, $color-azul-noche);
+  font: 700 13px $font-sans; border: 1px solid rgba($color-bronce, .4);
+  &:hover { background-color: $color-oro-suave; color: $color-azul-noche; }
 }
